@@ -1,13 +1,8 @@
 import 'dart:io';
 
-import 'Todo.dart';
-import 'Tasks.dart';
+import 'package:todo_app/controllers/todo.dart';
 
 void main() {
-  // Task task1 = Task(id: 1, description: 'Task 1');
-  // Task task2 = Task(id: 2, description: 'Task 2', isCompleted: true);
-  // List<Task> tasks = [task1, task2];
-  // Todo myTodo = new Todo(id: 1, title: 'My Todo', tasks: tasks);
   while(true) {
     print('Bienvenido a la aplicación de lista de tareas!');
     print('Por favor, elige una opción:');
@@ -37,8 +32,6 @@ void main() {
         print('Saliendo de la aplicación...');
         exit(0);
     }
-
-
 
   }
 

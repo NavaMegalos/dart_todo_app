@@ -1,3 +1,24 @@
-/json_files
-/.vscode
+# Dart build files
+/.dart_tool/
+/build/
 
+# IDE configurations
+.vscode/
+.idea/
+
+# Dart VM related
+*.log
+*.bak
+*.swp
+*.swo
+
+# Package manager specific
+pubspec.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Other
+*.dart_tool/
+/json_files

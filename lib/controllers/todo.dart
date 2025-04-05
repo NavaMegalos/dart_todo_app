@@ -1,18 +1,12 @@
 import 'dart:io';
 import 'dart:convert';
 
-import 'Tasks.dart';
-import 'utils/utils_functions.dart';
-
-class Todo {
-  final int id;
-  final String title;
-  final List<Task> tasks; // Changed to a list of Task objects  final String title;
-
-  Todo({required this.id, required this.title, required this.tasks});
-}
+import 'package:todo_app/utils/utils_functions.dart';
+import 'package:todo_app/models/todo.dart';
+import 'package:todo_app/models/task.dart';
 
 int guardarNuevaListaDeTareas(Todo nuevaListaDeTareas) {
+  print('Guardando nueva lista de tareas...');
   final directoryPath = Directory.current.path + '/json_files/listas_tareas';
   final filePath = '$directoryPath/${nuevaListaDeTareas.id}.json';
 
@@ -148,4 +142,3 @@ int obtenerListaDeTareas() {
   print('Lista seleccionada correctamente.');
   return selectedId;
 }
-
